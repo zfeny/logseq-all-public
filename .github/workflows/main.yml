@@ -19,7 +19,7 @@ jobs:
       run: |
         # 使用 sed 命令来替换内容
         sed -i 's|../assets/|https://alist.zfeny.top/d/site/pics/assets/|g' index.html
-        sed -i 's|:feature/enable-search-remove-accents? true}}}"</script>|:feature/enable-search-remove-accents? true, :default-home {:page \"contents\"}}}}"</script>'
+        sed -i 's|:feature/enable-search-remove-accents? true}}}"</script>|:feature/enable-search-remove-accents? true, :default-home {:page \"contents\"}}}}"</script>|g' index.html
         
     - name: Commit and push changes
       run: |
