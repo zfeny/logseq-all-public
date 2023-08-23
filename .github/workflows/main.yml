@@ -3,7 +3,7 @@ name: Replace Asset Paths
 on:
   push:
     branches:
-      - auto
+      - main
 permissions:
   contents: write
 
