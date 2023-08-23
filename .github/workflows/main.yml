@@ -3,7 +3,7 @@ name: Replace Asset Paths
 on:
   push:
     branches:
-      - main
+      - auto
 
 jobs:
   replace-assets:
