@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - auto
+permissions:
+  contents: write
 
 jobs:
   replace-assets:
