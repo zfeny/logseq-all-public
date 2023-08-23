@@ -12,16 +12,16 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-    
+
     - name: Replace asset paths in HTML
       run: |
         # 使用 sed 命令来替换内容
-        sed -i 's|../assets/|https://alist.zfeny.top/d/site/pics/assets/|g' path/to/your/file.html
+        sed -i 's|../assets/|https://alist.zfeny.top/d/site/pics/assets/|g' index.html
         
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add path/to/your/file.html
+        git add index.html
         git commit -m "Replace asset paths"
         git push
